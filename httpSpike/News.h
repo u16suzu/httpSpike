@@ -10,4 +10,7 @@
 
 @interface News : NSObject
 
++ (NSArray*)newsWithResponse:(id)responseObject;
+
+
 @end

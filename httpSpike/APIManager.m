@@ -10,7 +10,7 @@
 #import "News.h"
 
 #ifdef DEBUG
-#define API_BASE @"http://staging.api.example.com/"
+#define API_BASE @"http://staging.api.example.com/" // ここをかえる
 #else
 #define API_BASE @"http://api.example.com/"
 #endif
@@ -36,18 +36,24 @@
     }
 }
 
+// 共通処理､共通設定をココでかく
 - (NSURLSessionDataTask *)dataTaskWithRequest:(NSURLRequest *)request
                             completionHandler:(void (^)(NSURLResponse *, id, NSError *))completionHandler
 {
     NSMutableURLRequest *mutableRequest = [request mutableCopy];
-    mutableRequest.timeoutInterval = 20.0; // なんか共通でやっときたいこと色々
+    mutableRequest.timeoutInterval = 20.0;
+    
     return [super dataTaskWithRequest:mutableRequest completionHandler:completionHandler];
 }
 
+#pragma mark - API methods
+
+// ココでAPIごとに実装
 - (void)fetchNews:(void (^)(NSArray *, NSError *))handler{
-    [self GET:@"/api/v1/news" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
-        NSArray *news; // = [News newsWithResponse:responseObject]; // News クラスのオブジェクトの配列を返すとして。
-        
+    [self GET:@"v1/entries/recent.json" parameters:@{@"page" : @1}
+      success:^(NSURLSessionDataTask *task, id responseObject) {
+          
+        NSArray *news = [News newsWithResponse:responseObject];
         if (handler) {
             handler(news, nil);
         }
@@ -59,5 +65,4 @@
 }
 
 @end
-
 

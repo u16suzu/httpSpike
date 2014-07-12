@@ -7,9 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "APIManager.h"
 
 @interface ViewController ()
-
+@property (nonatomic) UITableView*table;
 @end
 
 @implementation ViewController
@@ -17,13 +18,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    [[APIManager sharedInstance] fetchNews:^(NSArray *news, NSError *error) {
+        NSLog(@"%@", news) ;
+    }];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
