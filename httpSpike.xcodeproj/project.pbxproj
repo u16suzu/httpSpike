@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6482BA22197134CA0057CE5B /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6482BA21197134CA0057CE5B /* APIManager.m */; };
+		6482BA251971362E0057CE5B /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = 6482BA241971362E0057CE5B /* News.m */; };
 		64A1847B1971313A007ECCD9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A1847A1971313A007ECCD9 /* Foundation.framework */; };
 		64A1847D1971313A007ECCD9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A1847C1971313A007ECCD9 /* CoreGraphics.framework */; };
 		64A1847F1971313A007ECCD9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A1847E1971313A007ECCD9 /* UIKit.framework */; };
@@ -21,6 +23,7 @@
 		64A1849C1971313B007ECCD9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A1847E1971313A007ECCD9 /* UIKit.framework */; };
 		64A184A41971313B007ECCD9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 64A184A21971313B007ECCD9 /* InfoPlist.strings */; };
 		64A184A61971313B007ECCD9 /* httpSpikeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A184A51971313B007ECCD9 /* httpSpikeTests.m */; };
+		821F19AC15944DA3BE5C0EE9 /* libPods-httpSpike.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8440E5B3B5AB4CD2AEA3DAD7 /* libPods-httpSpike.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E6CC80999CD400BA9F6FDE9 /* Pods-httpSpike.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-httpSpike.xcconfig"; path = "Pods/Pods-httpSpike.xcconfig"; sourceTree = "<group>"; };
+		6482BA20197134CA0057CE5B /* APIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
+		6482BA21197134CA0057CE5B /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
+		6482BA231971362E0057CE5B /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
+		6482BA241971362E0057CE5B /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
 		64A184771971313A007ECCD9 /* httpSpike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = httpSpike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64A1847A1971313A007ECCD9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		64A1847C1971313A007ECCD9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +61,7 @@
 		64A184A11971313B007ECCD9 /* httpSpikeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "httpSpikeTests-Info.plist"; sourceTree = "<group>"; };
 		64A184A31971313B007ECCD9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		64A184A51971313B007ECCD9 /* httpSpikeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = httpSpikeTests.m; sourceTree = "<group>"; };
+		8440E5B3B5AB4CD2AEA3DAD7 /* libPods-httpSpike.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-httpSpike.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +72,7 @@
 				64A1847D1971313A007ECCD9 /* CoreGraphics.framework in Frameworks */,
 				64A1847F1971313A007ECCD9 /* UIKit.framework in Frameworks */,
 				64A1847B1971313A007ECCD9 /* Foundation.framework in Frameworks */,
+				821F19AC15944DA3BE5C0EE9 /* libPods-httpSpike.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +96,7 @@
 				64A1849F1971313B007ECCD9 /* httpSpikeTests */,
 				64A184791971313A007ECCD9 /* Frameworks */,
 				64A184781971313A007ECCD9 /* Products */,
+				1E6CC80999CD400BA9F6FDE9 /* Pods-httpSpike.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +116,7 @@
 				64A1847C1971313A007ECCD9 /* CoreGraphics.framework */,
 				64A1847E1971313A007ECCD9 /* UIKit.framework */,
 				64A184991971313B007ECCD9 /* XCTest.framework */,
+				8440E5B3B5AB4CD2AEA3DAD7 /* libPods-httpSpike.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,6 +126,10 @@
 			children = (
 				64A184891971313A007ECCD9 /* AppDelegate.h */,
 				64A1848A1971313A007ECCD9 /* AppDelegate.m */,
+				6482BA20197134CA0057CE5B /* APIManager.h */,
+				6482BA21197134CA0057CE5B /* APIManager.m */,
+				6482BA231971362E0057CE5B /* News.h */,
+				6482BA241971362E0057CE5B /* News.m */,
 				64A1848C1971313A007ECCD9 /* Main.storyboard */,
 				64A1848F1971313A007ECCD9 /* ViewController.h */,
 				64A184901971313A007ECCD9 /* ViewController.m */,
@@ -159,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64A184A91971313B007ECCD9 /* Build configuration list for PBXNativeTarget "httpSpike" */;
 			buildPhases = (
+				7F1A09F1E88E491CA99ECA87 /* Check Pods Manifest.lock */,
 				64A184731971313A007ECCD9 /* Sources */,
 				64A184741971313A007ECCD9 /* Frameworks */,
 				64A184751971313A007ECCD9 /* Resources */,
+				FC3E3A1D98BF49FCA0589696 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,11 +262,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7F1A09F1E88E491CA99ECA87 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FC3E3A1D98BF49FCA0589696 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-httpSpike-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		64A184731971313A007ECCD9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6482BA251971362E0057CE5B /* News.m in Sources */,
+				6482BA22197134CA0057CE5B /* APIManager.m in Sources */,
 				64A184911971313A007ECCD9 /* ViewController.m in Sources */,
 				64A1848B1971313A007ECCD9 /* AppDelegate.m in Sources */,
 				64A184871971313A007ECCD9 /* main.m in Sources */,
@@ -373,6 +426,7 @@
 		};
 		64A184AA1971313B007ECCD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E6CC80999CD400BA9F6FDE9 /* Pods-httpSpike.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -386,6 +440,7 @@
 		};
 		64A184AB1971313B007ECCD9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E6CC80999CD400BA9F6FDE9 /* Pods-httpSpike.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -456,6 +511,7 @@
 				64A184AB1971313B007ECCD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		64A184AC1971313B007ECCD9 /* Build configuration list for PBXNativeTarget "httpSpikeTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +520,7 @@
 				64A184AE1971313B007ECCD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
